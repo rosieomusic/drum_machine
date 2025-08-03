@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67b4aad-928a-4141-973f-53f88f9a4781" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sounds/crash.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/htom.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/kick.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/ltom.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/mtom.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/shaker.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/snare.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/clap.wav" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/clap.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/crash.aif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/hh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/hh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/htom.aif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/kick.aif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ltom.aif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/mtom.aif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/ride.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/snare.aif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754166329620</updated>
-      <workItem from="1754166330709" duration="16709000" />
+      <workItem from="1754166330709" duration="17814000" />
     </task>
     <servers />
   </component>
@@ -104,6 +121,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Drum_Machine$main.coverage" NAME="main Coverage Results" MODIFIED="1754195786351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Drum_Machine$main.coverage" NAME="main Coverage Results" MODIFIED="1754196985277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

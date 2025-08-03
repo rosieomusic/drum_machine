@@ -33,14 +33,14 @@ beat_changed = True
 #load in sounds
 hh = mixer.Sound('sounds/hh.wav')
 oh = mixer.Sound('sounds/oh.wav')
-crash = mixer.Sound('sounds/crash.aif')
-ride = mixer.Sound('sounds/ride.wav')
-h_tom = mixer.Sound('sounds/htom.aif')
-m_tom = mixer.Sound('sounds/mtom.aif')
-l_tom = mixer.Sound('sounds/ltom.aif')
+crash = mixer.Sound('sounds/crash.wav')
+shaker = mixer.Sound('sounds/shaker.wav')
+h_tom = mixer.Sound('sounds/htom.wav')
+m_tom = mixer.Sound('sounds/mtom.wav')
+l_tom = mixer.Sound('sounds/ltom.wav')
 clap = mixer.Sound('sounds/clap.wav')
-snare = mixer.Sound('sounds/snare.aif')
-kick = mixer.Sound('sounds/kick.aif')
+snare = mixer.Sound('sounds/snare.wav')
+kick = mixer.Sound('sounds/kick.wav')
 pygame.mixer.set_num_channels(instruments + 3)
 
 def play_notes():
@@ -49,7 +49,7 @@ def play_notes():
             if i == 0:
                 crash.play()
             if i == 1:
-                ride.play()
+                shaker.play()
             if i == 2:
                 oh.play()
             if i == 3:
@@ -77,7 +77,7 @@ def draw_grid(clicks, beat):
     box_height = (HEIGHT - 200) // instruments
 
 
-    instrument_names = ["Crash", "Ride", "OH", "HH", "H Tom", "M Tom", "F Tom", "Clap", "Snare", "Kick"]
+    instrument_names = ["Crash", "Shaker", "OH", "HH", "H Tom", "M Tom", "F Tom", "Clap", "Snare", "Kick"]
     for i, name in enumerate(instrument_names):
         label = label_font.render(name, True, white)
         screen.blit(label, (30, i * 60 + 20))
