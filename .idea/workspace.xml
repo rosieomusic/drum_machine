@@ -115,7 +115,9 @@
       <workItem from="1754235588321" duration="834000" />
       <workItem from="1754236718406" duration="20000" />
       <workItem from="1754246013506" duration="69000" />
-      <workItem from="1754246212724" duration="14767000" />
+      <workItem from="1754246212724" duration="15432000" />
+      <workItem from="1754282092486" duration="1353000" />
+      <workItem from="1754318326140" duration="1303000" />
     </task>
     <servers />
   </component>
@@ -123,6 +125,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Drum_Machine$main.coverage" NAME="main Coverage Results" MODIFIED="1754281041044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Drum_Machine$main.coverage" NAME="main Coverage Results" MODIFIED="1754319525464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

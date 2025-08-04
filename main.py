@@ -1,6 +1,9 @@
 import pygame
 import sys
+import os
 from pygame import mixer
+
+import os
 
 pygame.init()
 
@@ -37,9 +40,15 @@ save_menu = False
 load_menu = False
 saved_beats = []
 # file creation/loading
-file = open("saved_beats.txt", "r")
-for line in file:
-    saved_beats.append(line)
+saved_beats = []
+if os.path.exists("saved_beats.txt"):
+    with open("saved_beats.txt", "r") as file:
+        for line in file:
+            saved_beats.append(line)
+else:
+    # Create the file for future saving
+    with open("saved_beats.txt", "w") as file:
+        pass
 beat_name = ""
 typing = False
 
@@ -209,11 +218,17 @@ def draw_load_menu(index):
             beat_clicked = []
             row_text = medium_font.render(f"{beat + 1}", True, white)
             screen.blit(row_text, (200, 100 + beat * 50))
-            name_index_start = saved_beats[beat].index("name: ") + 6
-            name_index_end = saved_beats[beat].index(", beats:")
-            name_text = medium_font.render(
-                saved_beats[beat][name_index_start:name_index_end], True, white
-            )
+            line = saved_beats[beat]
+            if "name: " in line and ", beats:" in line:
+                name_index_start = line.index("name: ") + 6
+                name_index_end = line.index(", beats:")
+                name_text = medium_font.render(
+                    line[name_index_start:name_index_end], True, white
+                )
+                screen.blit(name_text, (240, 100 + beat * 50))
+            else:
+                continue  # skip malformed lines
+
             screen.blit(name_text, (240, 100 + beat * 50))
         if 0 <= index < len(saved_beats) and beat == index:
             beat_index_end = saved_beats[beat].index(", bpm:")
@@ -373,13 +388,12 @@ while run:
                     elif not typing:
                         typing = True
                 if saving_button.collidepoint(event.pos):
-                    file = open("saved_beats.txt", "w")
                     saved_beats.append(
                         f"\nname: {beat_name}, beats: {beats}, bpm: {bpm}, selected: {clicked}"
                     )
-                    for i in range(len(saved_beats)):
-                        file.write(str(saved_beats[i]))
-                    file.close()
+                    with open("saved_beats.txt", "w") as file:
+                        file.writelines(saved_beats)
+
                     save_menu = False
                     typing = False
                     beat_name = ""
